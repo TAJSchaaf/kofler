@@ -87,7 +87,7 @@ def transform_inline_xml(input_xml):
 
 def convert():
     input_text = input_box.get("1.0", tk.END).strip()
-    output_text = transform_inline_xml(input_text)
+    output_text = transform_word_xml(input_text)
     output_box.delete("1.0", tk.END)
     output_box.insert(tk.END, output_text)
     pyperclip.copy(output_box.get("1.0", tk.END).strip())
